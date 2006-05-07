@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 -
 
 %description -l pl
-Program jest interfejsem graficznym dla polece¿ z pakietu
-wireless-tools ,ifconfig ,route ,dhclient i pozwala na zarz¿dzanie
-kartami wifi pod linuxem . Oprogramowanie powsta¿o w oparciu o gtk2.
+Program jest interfejsem graficznym dla poleceñ z pakietu
+wireless-tools, ifconfig, route, dhclient. Pozwala na zarz±dzanie
+kartami wifi pod linuxem. Oprogramowanie powsta³o w oparciu o gtk2.
 
 %prep
 %setup -q -n %{name}
