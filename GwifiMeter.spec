@@ -1,5 +1,3 @@
-#TODO
-# - build
 Summary:	GwifiMeter
 Summary(pl):	GwifiMeter
 Name:		GwifiMeter
@@ -11,6 +9,7 @@ Source0:	http://www.gwifimeter.republika.pl/%{name}.src-%{version}.tar.gz
 # Source0-md5:	dd390e5d3901fe917d4b221c32412c54
 URL:		http://www.gwifimeter.republika.pl
 BuildRequires:	gtk+2-devel >= 2:2.6.9
+BuildRequires:	pkgconfig
 Requires:	wireless-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,21 +26,17 @@ kartami wifi pod linuxem. Oprogramowanie powsta³o w oparciu o gtk2.
 
 %build
 %{__make}
-#	CFLAGS="%{rpmcflags}" \
-#	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
-#install -d $RPM_BUILD_ROOT
-#install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+install -d $RPM_BUILD_ROOT%{_bindir}
+install %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc HISTORIA README
+%doc HISTORIA README profile-example
+%attr(755,root,root) %{_bindir}/%{name}
