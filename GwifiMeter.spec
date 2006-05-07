@@ -1,5 +1,5 @@
 #TODO
-# - %build , %install , %files
+# - build
 Summary:	GwifiMeter
 Summary(pl):	GwifiMeter
 Name:		GwifiMeter
@@ -9,10 +9,9 @@ License:	GPL v2
 Group:		Applications
 Source0:	http://www.gwifimeter.republika.pl/%{name}.src-%{version}.tar.gz
 # Source0-md5:	dd390e5d3901fe917d4b221c32412c54
-#Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.gwifimeter.republika.pl
-BuildRequires:	gtk+2-devel >= 2.6.9
-Requires:	wireles-tools
+BuildRequires:	gtk+2-devel >= 2:2.6.9
+Requires:	wireless-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
