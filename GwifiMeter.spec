@@ -1,6 +1,6 @@
 Summary:	GwifiMeter - frontend GUI for wireless-tools
 Summary(de):	GwifiMeter - ein GUI für wireless-tools
-Summary(pl):	GwifiMeter - interfajs graficzny dla wireless-tools
+Summary(pl):	GwifiMeter - interfejs graficzny dla wireless-tools
 Name:		GwifiMeter
 Version:	0.2.0
 Release:	0.1
