@@ -1,4 +1,5 @@
 Summary:	GwifiMeter
+Summary(de):	GwifiMeter
 Summary(pl):	GwifiMeter
 Name:		GwifiMeter
 Version:	0.2.0
@@ -14,7 +15,13 @@ Requires:	wireless-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
--
+This application is a frontend GUI for wireless-tools, ifconfig,
+route, dhclient. It uses gtk2 and makes wifi managing much easier.
+
+%description -l de
+Dieses Programm ist ein GUI für wireless-tools, ifconfig, route,
+dhclient. Es benutzt gtk2 und ermöglicht eine viel enifachere wifi
+Verwaltung.
 
 %description -l pl
 Program jest interfejsem graficznym dla poleceñ z pakietu
