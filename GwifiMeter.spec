@@ -1,3 +1,4 @@
+# TODO - good patch for user path - calback.c line 178- man getpwuid
 Summary:	GwifiMeter - frontend GUI for wireless-tools
 Summary(de):	GwifiMeter - ein GUI für wireless-tools
 Summary(pl):	GwifiMeter - interfejs graficzny dla wireless-tools
@@ -8,6 +9,7 @@ License:	GPL v2
 Group:		Applications
 Source0:	http://www.gwifimeter.republika.pl/%{name}.src-%{version}.tar.gz
 # Source0-md5:	dd390e5d3901fe917d4b221c32412c54
+Patch0:		%{name}-user_path.patch
 URL:		http://www.gwifimeter.republika.pl
 BuildRequires:	gtk+2-devel >= 2:2.6.9
 BuildRequires:	pkgconfig
@@ -30,6 +32,7 @@ kartami wifi pod linuxem. Oprogramowanie powsta³o w oparciu o gtk2.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
 %{__make}
