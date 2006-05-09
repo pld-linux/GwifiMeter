@@ -1,4 +1,6 @@
-# TODO - good patch for user path - calback.c line 178- man getpwuid
+# TODO:
+# - good patch for user path - calback.c line 178- man getpwuid
+# - optflags
 Summary:	GwifiMeter - frontend GUI for wireless-tools
 Summary(de):	GwifiMeter - ein GUI für wireless-tools
 Summary(pl):	GwifiMeter - interfejs graficzny dla wireless-tools
@@ -18,17 +20,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This application is a frontend GUI for wireless-tools, ifconfig,
-route, dhclient. It uses gtk2 and makes wifi managing much easier.
+route, dhclient. It uses GTK+2 and makes WiFi managing much easier.
 
 %description -l de
 Dieses Programm ist ein GUI für wireless-tools, ifconfig, route,
-dhclient. Es benutzt gtk2 und ermöglicht eine viel enifachere wifi
+dhclient. Es benutzt GTK+2 und ermöglicht eine viel enifachere WiFi
 Verwaltung.
 
 %description -l pl
 Program jest interfejsem graficznym dla poleceñ z pakietu
 wireless-tools, ifconfig, route, dhclient. Pozwala na zarz±dzanie
-kartami wifi pod linuxem. Oprogramowanie powsta³o w oparciu o gtk2.
+kartami WiFi pod Linuksem. Oprogramowanie powsta³o w oparciu o GTK+2.
 
 %prep
 %setup -q -n %{name}
@@ -41,7 +43,6 @@ kartami wifi pod linuxem. Oprogramowanie powsta³o w oparciu o gtk2.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 install %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
