@@ -2,8 +2,8 @@
 # - good patch for user path - calback.c line 178- man getpwuid
 # - optflags
 Summary:	GwifiMeter - frontend GUI for wireless-tools
-Summary(de.UTF-8):   GwifiMeter - ein GUI für wireless-tools
-Summary(pl.UTF-8):   GwifiMeter - interfejs graficzny dla wireless-tools
+Summary(de.UTF-8):	GwifiMeter - ein GUI für wireless-tools
+Summary(pl.UTF-8):	GwifiMeter - interfejs graficzny dla wireless-tools
 Name:		GwifiMeter
 Version:	0.2.0
 Release:	0.1
