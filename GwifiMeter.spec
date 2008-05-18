@@ -6,7 +6,7 @@ Summary(de.UTF-8):	GwifiMeter - ein GUI für wireless-tools
 Summary(pl.UTF-8):	GwifiMeter - interfejs graficzny dla wireless-tools
 Name:		GwifiMeter
 Version:	0.6
-Release:	0.1
+Release:	1
 License:	GPL v2
 Group:		Applications
 Source0:	http://www.gwifimeter.republika.pl/download/%{name}.src-%{version}.tar.gz
@@ -41,7 +41,6 @@ kartami WiFi pod Linuksem. Oprogramowanie powstało w oparciu o GTK+2.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
