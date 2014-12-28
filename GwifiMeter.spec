@@ -12,7 +12,7 @@ Group:		Applications
 Source0:	http://www.gwifimeter.republika.pl/download/%{name}.src-%{version}.tar.gz
 # Source0-md5:	0094ac51e76436b81ef6133b4d00e0be
 URL:		http://www.gwifimeter.republika.pl/
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel >= 2:2.6.9
 BuildRequires:	pkgconfig
 Requires:	wireless-tools
